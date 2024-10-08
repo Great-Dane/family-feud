@@ -7,10 +7,10 @@ This app is currently available at ➡ https://famf.app
 
 ---
 
-I was unsatisfied with the family feud projects
-I found on github and I didn't want to use powerpoint(I use linux 🐧)
+I was unsatisfied with the Family Feud projects
+I found on github and I didn't want to use PowerPoint (I use linux 🐧).
 
-I so I decided to make it from scratch and make it as functional as possible.
+So I decided to make it from scratch and make it as functional as possible.
 
 Features:
 
@@ -42,15 +42,12 @@ npm run start_local #( windows, do npm run start_windows )
 # npm run dev for working on code
 ```
 
-go to
+Then go to https://localhost:3000/
 
-https://localhost:3000/
+### Troubleshooting
 
-Click on the "Host" button to go to the admin console
-
-Players can join your game by entering in the supplied room code.
-
-if you have trouble do `rm -r node_modules` then retry `npm install`
+- Try `rm -r node_modules`, then `npm install`.
+- On Windows, if you get an error message regarding digital envelope routines being unsupported, try `set NODE_OPTIONS=--openssl-legacy-provider`.
 
 ### Screen Share Audio Linux
 
