@@ -3,7 +3,7 @@ export default function TeamName(props) {
     <div
       className="text-3xl flex flex-col text-center space-y-2"
       style={{
-        minWidth: 0,
+        width: '50%',
       }}
     >
       <div className="bg-gradient-to-tr from-primary-900 to-primary-500">
@@ -18,12 +18,12 @@ export default function TeamName(props) {
             textShadow: "1px 2px 4px black",
           }}
         >
-          {props.game.teams[props.team].name}
+          {props.game.teams[props.team].name} : {props.game.teams[props.team].points} POINTS
         </p>
       </div>
       <div className="flex justify-center flex-row text-center space-x-2">
         {Array(props.game.teams[props.team].mistakes).fill(
-          <div className="flex-shrink">
+          <div className="flex-shrink max-w-12">
             <img src="x.png" />
           </div>
         )}

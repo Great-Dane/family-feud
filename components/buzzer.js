@@ -121,7 +121,7 @@ export default function Buzzer(props) {
     return (
       <>
         <img
-          className={`lg:w-1/2 sm:w-10/12 md:w-3/4 w-11/12 top-2/4 pointer-events-none ${
+          className={`sm:w-10/12 md:w-3/4 w-11/12 top-2/4 pointer-events-none ${
             showMistake ? "opacity-90" : "opacity-0"
             } transition-opacity ease-in-out duration-300 absolute`}
           src="x.svg"
@@ -138,40 +138,11 @@ export default function Buzzer(props) {
           <>
             {!game.title && !game.is_final_round ? (
               <div className="pt-8 flex flex-col space-y-5">
-                <Round game={game} />
-
-                {/* Buzzer Section TODO replace with function*/}
-                <div
-                  className=""
-                  style={{ width: "100%", textAlign: "center" }}
-                >
-                  {buzzed ? (
-                    <img
-                      style={{ width: "50%", display: "inline-block" }}
-                      src="buzzed.svg"
-                    />
-                  ) : (
-                      <img
-                        className="cursor-pointer"
-                        style={{ width: "50%", display: "inline-block" }}
-                        onClick={() => {
-                          send({ action: "buzz", id: props.id });
-                        }}
-                        src="buzz.svg"
-                      />
-                    )}
-                  <p className="text-secondary-900 p-2 italic">
-                    {t("buzzer is reset between rounds")}
-                  </p>
-                  {error !== "" ? (
-                    <p className="text-2xl text-failure-700">{error}</p>
-                  ) : null}
-                </div>
-                {/* END Buzzer Section TODO replace with function*/}
                 <div className="flex flex-row justify-between min-w-full space-x-3">
                   <TeamName game={game} team={0} />
                   <TeamName game={game} team={1} />
                 </div>
+                <Round game={game} />
                 <div className="">
                   <QuestionBoard round={game.rounds[game.round]} />
                 </div>

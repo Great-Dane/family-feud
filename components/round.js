@@ -40,22 +40,23 @@ export default function Round(props) {
   return (
     <div className="w-auto flex flex-col space-y-1 items-center">
       <div className="flex flex-row justify-around space-x-2 h-28">
-        <RoundPointTally points={props.game.teams[0].points} />
         <RoundPointTally
           points={props.game.point_tracker[props.game.round]}
           fontWeight="bold"
         />
-        <RoundPointTally points={props.game.teams[1].points} />
       </div>
 
       <div className="flex flex-row justify-center">
-        {round.multiply > 1 ? (
-          <div>
-            <p className="text-2xl text-start text-foreground">
-              x{t("number", { count: round.multiply })}
-            </p>
-          </div>
-        ) : null}
+        {round.multiply == 2 ? (
+          <p className="text-4xl text-start text-foreground font-bold">
+            DOUBLE POINTS
+          </p>
+        ): null}
+        {round.multiply == 3 ? (
+          <p className="text-4xl text-start text-foreground font-bold">
+            TRIPLE POINTS
+          </p>
+        ): null}
       </div>
       <div className="flex flex-row justify-center">
         {props.game.settings.hide_questions === false ? (
