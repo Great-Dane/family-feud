@@ -121,7 +121,7 @@ export default function Buzzer(props) {
     return (
       <>
         <img
-          className={`sm:w-10/12 md:w-3/4 w-11/12 top-2/4 pointer-events-none ${
+          className={`h-1/2 top-1/8 left-0 right-0 mx-auto pointer-events-none ${
             showMistake ? "opacity-90" : "opacity-0"
             } transition-opacity ease-in-out duration-300 absolute`}
           src="x.svg"
