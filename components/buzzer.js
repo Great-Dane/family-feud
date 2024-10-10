@@ -56,6 +56,10 @@ export default function Buzzer(props) {
     ws.current.addEventListener("message", (evt) => {
       let received_msg = evt.data;
       let json = JSON.parse(received_msg);
+      if (json.action == "reveal") {
+        var audio = new Audio("good-answer.mp3");
+        audio.play();
+      }
       if (json.action === "ping") {
         // server gets the average latency periodically
         console.debug(props.id);
