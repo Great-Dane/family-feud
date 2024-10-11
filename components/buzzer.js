@@ -16,8 +16,8 @@ export default function Buzzer(props) {
   const [buzzed, setBuzzed] = useState(false);
   const [buzzerReg, setBuzzerReg] = useState(null);
   const [error, setErrorVal] = useState("");
-  const [timer, setTimer] = useState(0);
   const [showMistake, setShowMistake] = useState(false);
+  const [timer, setTimer] = useState(0);
   let refreshCounter = 0;
 
   function setError(e) {
@@ -103,6 +103,10 @@ export default function Buzzer(props) {
           json.data.teams[1].name = `${t("team")} ${t("number", { count: 2 })}`;
         }
         props.setGame(json.data);
+      } else if (json.action === "change_round") {
+        var audio = new Audio("addams-theme.mp3");
+        audio.play();
+        props.setGame(json.data);
       } else if (json.action === "buzzed") {
         setBuzzed(true);
       } else if (json.action === "clearbuzzers") {
@@ -125,7 +129,7 @@ export default function Buzzer(props) {
     return (
       <>
         <img
-          className={`h-1/2 top-1/8 left-0 right-0 mx-auto pointer-events-none ${
+          className={`h-1/2 top-1/8 left-0 right-0 mx-auto pointer-events-none z-50 ${
             showMistake ? "opacity-90" : "opacity-0"
             } transition-opacity ease-in-out duration-300 absolute`}
           src="x.svg"

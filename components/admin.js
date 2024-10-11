@@ -753,7 +753,7 @@ export default function Admin(props) {
                         color: "bg-success-500",
                         textColor: "text-foreground",
                       });
-                      send({ action: "data", data: game });
+                      send({ action: "change_round", data: game });
                     }}
                   >
                     {game.rounds.map((key, index) => (
@@ -780,7 +780,7 @@ export default function Admin(props) {
                         color: "bg-success-500",
                         textColor: "text-foreground",
                       });
-                      send({ action: "data", data: game });
+                      send({ action: "change_round", data: game });
                     }}
                   >
                     {t("Start Round 1")}
@@ -805,7 +805,7 @@ export default function Admin(props) {
                         textColor: "text-foreground",
                       });
                       console.debug(game.round);
-                      send({ action: "data", data: game });
+                      send({ action: "change_round", data: game });
                     }}
                   >
                     {t("Next Round")}
