@@ -1,18 +1,29 @@
-import { useTranslation } from "react-i18next";
 import "../i18n/i18n";
+import ReactCardFlip from 'react-card-flip';
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function QuestionBoard(props) {
   const { t } = useTranslation();
+
+  const [state, setState] = useState({
+    answers: []
+  });
+
+  useEffect(() => {
+    setState(state => ({...state, answers: props.round.answers}))
+  }, [props.round]);
+
   return (
     <div className="flex flex-row items-center justify-center">
       <div
         className="rounded-3xl border-black grid lg:grid-rows-4 grid-flow-col auto-cols-fr gap-3 bg-black flex-grow"
         style={{ borderWidth: 12 }}
       >
-        {props.round.answers.map((x, index) => (
-          <div className=" uppercase items-center text-center rounded border-2 font-extrabold">
-            {x.trig ? (
-              // answered question
+        {state.answers.map((x, index) => (
+          <ReactCardFlip isFlipped={!x.trig} flipDirection="vertical" key={index}>
+            {/* FRONT */}
+            <div className="uppercase items-center text-center rounded border-2 font-extrabold">
               <div className="h-full bg-gradient-to-t from-primary-900 via-primary-500 to-primary-700">
                 <div className="flex h-full items-center justify-center">
                   <p
@@ -31,8 +42,9 @@ export default function QuestionBoard(props) {
                   </div>
                 </div>
               </div>
-            ) : (
-              // unanswered question
+            </div>
+            {/* BACK */}
+            <div className="uppercase items-center text-center rounded border-2 font-extrabold">
               <div className="h-full bg-gradient-to-t py-3 flex justify-center items-center from-primary-700 to-primary-500 ">
                 <div
                   className="rounded-full justify-center items-center inline-block px-5 border-2 py-2 bg-gradient-to-tr
@@ -47,8 +59,8 @@ export default function QuestionBoard(props) {
                   </p>
                 </div>
               </div>
-            )}
-          </div>
+            </div>
+          </ReactCardFlip>
         ))}
       </div>
     </div>
