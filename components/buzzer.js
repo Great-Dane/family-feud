@@ -104,7 +104,7 @@ export default function Buzzer(props) {
         }
         props.setGame(json.data);
       } else if (json.action === "change_round") {
-        var audio = new Audio("addams-theme.mp3");
+        var audio = new Audio("fa-la-la.mp3");
         audio.play();
         props.setGame(json.data);
       } else if (json.action === "buzzed") {
