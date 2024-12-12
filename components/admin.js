@@ -816,7 +816,7 @@ export default function Admin(props) {
                       send({ action: "show_mistake" });
                     }}
                   >
-                    <img className={`w-3/12`} src="x.svg" />
+                    <img className={`border-4 border-white bg-white w-3/12`} src="x.svg" />
                   </button>
                   <button
                     className="border-4 rounded p-10 flex-grow text-2xl bg-secondary-300 text-foreground"

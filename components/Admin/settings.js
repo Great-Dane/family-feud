@@ -29,6 +29,11 @@ export function ThemeSwitcher(props) {
             fgcolor: "text-white",
             title: "slate",
         },
+        holiday: {
+            bgcolor: "#002500",
+            fgcolor: "text-white",
+            title: "holiday",
+        },
         educational: {
             bgcolor: "#fffbf0",
             fgcolor: "text-black",

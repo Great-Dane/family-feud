@@ -166,6 +166,60 @@ module.exports = {
             },
           },
         },
+        
+        {
+          // name your theme anything that could be a valid css class name
+          // remember what you named your theme because you will use it as a class to enable the theme
+          name: "holiday",
+          // put any overrides your theme has here
+          // just as if you were to extend tailwind's theme like normal https://tailwindcss.com/docs/theme#extending-the-default-theme
+          extend: {
+            colors: {
+              background: "#002500",
+              success: {
+                200: "#b8c790",
+                300: "#b8c790",
+                500: "#54760a",
+                700: "#b8c790",
+                900: "#b8c790",
+              },
+              secondary: {
+                200: "#931620",
+                300: "#b02431",
+                500: "#d03439",
+                700: "#c7686f",
+                900: "#b8c790",
+              },
+              failure: {
+                200: "#b8c790",
+                300: "#c7686f",
+                500: "#b31516",
+                700: "#b02431",
+                900: "#931620",
+              },
+              warning: {
+                200: "#b8c790",
+                300: "#c7686f",
+                500: "#d03439",
+                700: "#b02431",
+                900: "#931620",
+              },
+              primary: {
+                200: "#b8c790",
+                300: "#c7686f",
+                500: "#d03439",
+                700: "#b02431",
+                900: "#931620",
+              },
+              foreground: "white",
+              fastm: {
+                text: "white",
+                holder: "#18181B",
+                background: "black",
+              },
+            },
+          },
+        },
         {
           // name your theme anything that could be a valid css class name
           // remember what you named your theme because you will use it as a class to enable the theme
