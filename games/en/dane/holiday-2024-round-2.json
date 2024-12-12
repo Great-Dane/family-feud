@@ -1,1 +1,146 @@
-{"settings":{},"rounds":[{"question":"Name a reason Santa might refuse to go down someone’s chimney.","answers":[{"ans":"FIRE IN FIREPLACE","pnt":37},{"ans":"CAN’T FIT / TOO FAT","pnt":20},{"ans":"DIRTY / SOOT","pnt":16},{"ans":"ON NIGHTY LIST / BAD","pnt":11},{"ans":"CHIMNEY SEALED","pnt":5},{"ans":"NO CHIMNEY","pnt":3}],"multiply":1},{"question":"Name something snowmen might have nightmares about.","answers":[{"ans":"SUMMER","pnt":62},{"ans":"FIRE / FLAMETHROWER","pnt":14},{"ans":"BLOW DRYERS","pnt":3},{"ans":"RAIN","pnt":3},{"ans":"SNOWPLOW / SHOVEL","pnt":2},{"ans":"SNOWBALLS","pnt":2}],"multiply":1},{"question":"Name something people do the day after Christmas.","answers":[{"ans":"SLEEP / RELAX","pnt":39},{"ans":"SHOP / FIND SALES","pnt":23},{"ans":"RETURN GIFTS","pnt":14},{"ans":"EAT","pnt":11},{"ans":"WATCH MOVIES / TV","pnt":10},{"ans":"CLEAN","pnt":7},{"ans":"PLAY WITH NEW STUFF","pnt":6},{"ans":"WORK","pnt":5}],"multiply":2},{"question":"Name something Santa Claus might say he wants for Christmas.","answers":[{"ans":"REST / VACATION","pnt":24},{"ans":"PIMPED-OUT SLEIGH","pnt":22},{"ans":"SLEEP / PEACE & QUIET","pnt":20},{"ans":"MORE ELVES / HELP","pnt":7},{"ans":"TIME WITH THE MRS.","pnt":6},{"ans":"FOOD / COCOA","pnt":5},{"ans":"GOOD FLYING WEATHER","pnt":4},{"ans":"NEW SUIT","pnt":4}],"multiply":3}],"final_round":[],"final_round_timers":[20,25]}
+{
+  "settings": {},
+  "rounds": [
+    {
+      "question": "Name a reason Santa might refuse to go down someone’s chimney.",
+      "answers": [
+        {
+          "ans": "FIRE IN FIREPLACE",
+          "pnt": 37
+        },
+        {
+          "ans": "CAN’T FIT / TOO FAT",
+          "pnt": 20
+        },
+        {
+          "ans": "DIRTY / SOOT",
+          "pnt": 16
+        },
+        {
+          "ans": "ON NIGHTY LIST / BAD",
+          "pnt": 11
+        },
+        {
+          "ans": "CHIMNEY SEALED",
+          "pnt": 5
+        },
+        {
+          "ans": "NO CHIMNEY",
+          "pnt": 3
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "question": "Name something snowmen might have nightmares about.",
+      "answers": [
+        {
+          "ans": "SUMMER",
+          "pnt": 62
+        },
+        {
+          "ans": "FIRE / FLAMETHROWER",
+          "pnt": 14
+        },
+        {
+          "ans": "BLOW DRYERS",
+          "pnt": 3
+        },
+        {
+          "ans": "RAIN",
+          "pnt": 3
+        },
+        {
+          "ans": "SNOWPLOW / SHOVEL",
+          "pnt": 2
+        },
+        {
+          "ans": "SNOWBALLS",
+          "pnt": 2
+        }
+      ],
+      "multiply": 1
+    },
+    {
+      "question": "Name something people do the day after Christmas.",
+      "answers": [
+        {
+          "ans": "SLEEP / RELAX",
+          "pnt": 39
+        },
+        {
+          "ans": "SHOP / FIND SALES",
+          "pnt": 23
+        },
+        {
+          "ans": "RETURN GIFTS",
+          "pnt": 14
+        },
+        {
+          "ans": "EAT",
+          "pnt": 11
+        },
+        {
+          "ans": "WATCH MOVIES / TV",
+          "pnt": 10
+        },
+        {
+          "ans": "CLEAN",
+          "pnt": 7
+        },
+        {
+          "ans": "PLAY WITH NEW STUFF",
+          "pnt": 6
+        },
+        {
+          "ans": "WORK",
+          "pnt": 5
+        }
+      ],
+      "multiply": 2
+    },
+    {
+      "question": "Name something Santa Claus might say he wants for Christmas.",
+      "answers": [
+        {
+          "ans": "REST / VACATION",
+          "pnt": 24
+        },
+        {
+          "ans": "PIMPED-OUT SLEIGH",
+          "pnt": 22
+        },
+        {
+          "ans": "SLEEP / PEACE & QUIET",
+          "pnt": 20
+        },
+        {
+          "ans": "MORE ELVES / HELP",
+          "pnt": 7
+        },
+        {
+          "ans": "TIME WITH THE MRS.",
+          "pnt": 6
+        },
+        {
+          "ans": "FOOD / COCOA",
+          "pnt": 5
+        },
+        {
+          "ans": "GOOD FLYING WEATHER",
+          "pnt": 4
+        },
+        {
+          "ans": "NEW SUIT",
+          "pnt": 4
+        }
+      ],
+      "multiply": 3
+    }
+  ],
+  "final_round": [],
+  "final_round_timers": [
+    20,
+    25
+  ]
+}
